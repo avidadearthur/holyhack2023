@@ -1,0 +1,5 @@
+pandas==1.4.2
+matplotlib==3.7.1
+Flask==2.2.3
+Flask-Jsonpify==1.5.0
+scikit-learn==1.2.2

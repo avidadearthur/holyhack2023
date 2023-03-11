@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ignore some Flask related files
 # Default ignored files
 /shelf/
@@ -137,3 +138,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+=======
+venv/*
+__pycache__/*
+>>>>>>> dd33108 (Git ignor update)
