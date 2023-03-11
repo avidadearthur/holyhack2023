@@ -1,819 +1,720 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>OnConf template</title>
-    <meta property="og:title" content="OnConf template" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8" />
-    <meta property="twitter:card" content="summary_large_image" />
 
-    <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
-    </style>
-    <style data-tag="default-style-sheet">
-      html {
-        font-family: Source Sans Pro;
-        font-size: 16px;
-      }
+<head>
+  <title>OnConf template</title>
+  <meta property="og:title" content="OnConf template" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta property="twitter:card" content="summary_large_image" />
 
-      body {
-        font-weight: 400;
-        font-style:normal;
-        text-decoration: none;
-        text-transform: none;
-        letter-spacing: normal;
-        line-height: 1.15;
-        color: var(--dl-color-gray-black);
-        background-color: var(--dl-color-gray-white);
+  <style data-tag="reset-style-sheet">
+    html {
+      line-height: 1.15;
+    }
 
-      }
-    </style>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&amp;display=swap"
-      data-tag="font"
-    />
+    body {
+      margin: 0;
+    }
 
-    <link rel="stylesheet" href="./style.css" />
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script>
-      ScrollReveal({ reset: true });
-    </script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script>
-      ScrollReveal({ reset: true });
-    </script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script>
-      ScrollReveal({ reset: true });
-    </script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script>
-      ScrollReveal({ reset: true });
-    </script>
-  </head>
-  <body>
-    <div>
-      <script
-        type="text/javascript"
-        src="https://unpkg.com/dangerous-html@0.1.11/dist/default/lib.umd.js"
-      ></script>
-      <link href="./home.css" rel="stylesheet" />
+    * {
+      box-sizing: border-box;
+      border-width: 0;
+      border-style: solid;
+    }
 
-      <div class="home-container">
-        <section class="home-hero">
-          <div class="home-background">
-            <img
-              alt="image"
-              src="public/playground_assets/circle-background.svg"
-              class="home-image"
-            />
-            <img
-              alt="image"
-              src="public/playground_assets/line-background.svg"
-              class="home-image01"
-            />
-          </div>
-          <header data-thq="thq-navbar" class="home-navbar">
-            <h2 class="home-text">Haggethonners</h2>
-            <div
-              data-thq="thq-navbar-nav"
-              data-role="Nav"
-              class="home-desktop-menu"
-            >
-              <nav
-                data-thq="thq-navbar-nav-links"
-                data-role="Nav"
-                class="home-nav"
-              >
-                <span class="navLink">The Problem</span>
-                <span class="navLink">Demo Video</span>
-                <span class="navLink">Solutions</span>
-                <span class="navLink">Team</span>
-              </nav>
-              <button class="home-register button">
-                <span>Try the demo</span>
-                <svg viewBox="0 0 1024 1024" class="home-icon">
-                  <path
-                    d="M512 170l342 342-342 342-60-60 238-240h-520v-84h520l-238-240z"
-                  ></path>
-                </svg>
-              </button>
-            </div>
-            <div data-thq="thq-burger-menu" class="home-burger-menu">
-              <svg viewBox="0 0 1024 1024" class="home-icon02">
-                <path
-                  d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                ></path>
-              </svg>
-            </div>
-            <div data-thq="thq-mobile-menu" class="home-mobile-menu">
-              <div
-                data-thq="thq-mobile-menu-nav"
-                data-role="Nav"
-                class="home-nav1"
-              >
-                <div class="home-container1">
-                  <h2 class="home-text02">OnConf</h2>
-                  <div data-thq="thq-close-menu" class="home-menu-close">
-                    <svg viewBox="0 0 1024 1024" class="home-icon04">
-                      <path
-                        d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-                <nav
-                  data-thq="thq-mobile-menu-nav-links"
-                  data-role="Nav"
-                  class="home-nav2"
-                >
-                  <span class="navLink home-text03">About</span>
-                  <span class="navLink home-text04">Features</span>
-                  <span class="navLink home-text05">Pricing</span>
-                  <span class="navLink home-text06">Team</span>
-                  <span class="navLink home-text07">Blog</span>
-                </nav>
-                <div class="home-button-container">
-                  <button class="home-login button">Login</button>
-                  <button class="button home-register1">Register</button>
-                </div>
-                <div class="home-icon-group">
-                  <div class="home-icons">
-                    <svg
-                      viewBox="0 0 950.8571428571428 1024"
-                      class="home-icon06"
-                    >
-                      <path
-                        d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
-                      ></path></svg
-                    ><svg
-                      viewBox="0 0 877.7142857142857 1024"
-                      class="home-icon08"
-                    >
-                      <path
-                        d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
-                      ></path></svg
-                    ><svg
-                      viewBox="0 0 602.2582857142856 1024"
-                      class="home-icon10"
-                    >
-                      <path
-                        d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <img
-                alt="image"
-                src="public/playground_assets/quote-background.svg"
-                class="home-background1"
-              />
-            </div>
-          </header>
-          <div class="home-hero-content">
-            <h3 class="home-text08">
-              <span class="home-text09">How can DataCamp</span>
-              <span class="home-text10">engage</span>
-              <span class="home-text11"></span>
-              <span class="home-text12">&amp;</span>
-              <br class="home-text13" />
-              <span class="home-text14">motivate</span>
-              <span class="home-text15"></span>
-              <span class="home-text16">more learners?</span>
-              <br class="home-text17" />
-            </h3>
-            <div class="home-caption">
-              <p class="home-caption1">
-                <span>a solution by the Haggethoners</span>
-                <br />
-                <span>10—11 March 2023 Leuven</span>
-              </p>
-            </div>
-          </div>
-        </section>
-        <section class="home-problems">
-          <div class="home-header">
-            <div class="home-section-numeral">
-              <div class="home-divide"></div>
-              <p class="home-text21">01</p>
-            </div>
-            <div data-aos="fade-right" class="home-heading">
-              <h3 class="home-title">Challenges&nbsp;</h3>
-              <p class="home-caption2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam.
-              </p>
-            </div>
-          </div>
-          <div class="home-first">
-            <img
-              alt="image"
-              src="public/playground_assets/why-2.svg"
-              class="home-image02 image-notes"
-            />
-            <div data-aos="fade-up-right" class="home-content">
-              <h2 class="home-header01">
-                <span class="home-text22">
-                  Some learners find it difficult to find the&nbsp;
-                </span>
-                <span class="home-text23">time</span>
-                <span class="home-text24">to learn</span>
-                <br />
-                <span class="home-text26">What can DataCamp do about it?</span>
-                <br />
-              </h2>
-              <div class="home-list">
-                <div class="home-note">
-                  <div class="home-point"></div>
-                  <p class="home-text28">
-                    <span>
-                      Most learners claim they don't have time to complete their
-                      courses because oftentimes learning paths fail to fulfill
-                      the user's goals. We think that
-                    </span>
-                    <span class="home-text30">
-                      combining Natural Language Processing with the vast
-                      catalog of courses DataCamp has can create more
-                      efficient&nbsp; learning paths that keep users engaged.
-                    </span>
-                  </p>
-                </div>
-                <div class="home-note1"><div class="home-point1"></div></div>
-              </div>
-            </div>
-          </div>
-          <div class="home-second">
-            <img
-              alt="image"
-              src="public/playground_assets/online-test-2.svg"
-              class="home-image03 image-notes"
-            />
-            <div data-aos="fade-up-left" class="home-content01">
-              <h2 class="home-header02">
-                <span class="home-text31">
-                  Others might find the courses too hard, tend to get stuck or
-                </span>
-                <span class="home-text32">progress too slowly</span>
-                <br class="home-text33" />
-                <span class="home-text34">How can DataCamp tackle this?</span>
-                <br />
-              </h2>
-              <div class="home-note2">
-                <div class="home-point2"></div>
-                <p class="home-text36">
-                  <span>We are confident that by</span>
-                  <span class="home-text38">
-                    creating community spaces where users can ask questions and
-                    share their achievements will boost the motivation of new
-                    learners
-                  </span>
-                  <span>and smoothen the learning experience.</span>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="home-third">
-            <img
-              alt="image"
-              src="public/playground_assets/work-from-home-1.svg"
-              class="home-image04"
-            />
-            <div data-aos="fade-up-left" class="home-content02">
-              <h2 class="home-header03">
-                <span class="home-text40">
-                  Someone else may be required use DataCamp&nbsp;as part of
-                  their employer’s
-                </span>
-                <span class="home-text41">mandatory training</span>
-                <br />
-                <span class="home-text43">
-                  How can DataCamp keep these users engaged?
-                </span>
-                <br />
-              </h2>
-              <div class="home-note3">
-                <div class="home-point3"></div>
-                <p class="home-text45">
-                  <span>
-                    We believe that the best way to keep engagement during
-                    training programs is to shorten the gap between the course
-                    content and the day-to-day work of these employees. We think
-                  </span>
-                  <span class="home-text47">
-                    allowing the learners to practice with their real datasets
-                    or with similar datasets suggested by DataCamp
-                  </span>
-                  <span>
-                    &nbsp;will make mandatory training more useful and
-                    interesting to follow.
-                  </span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="home-solutions">
-          <div class="home-header04">
-            <div class="home-section-numeral1">
-              <div class="home-divide1"></div>
-              <p class="home-text49">02</p>
-            </div>
-            <div data-aos="fade-right" class="home-heading1">
-              <h2 class="home-title01">Solutions</h2>
-              <p class="home-caption3">
-                <span class="home-text50">
-                  We came up with three with ways to encourage learners to start
-                  or continue learning when their motivation is low.
-                </span>
-                <br class="home-text51" />
-                <span class="home-text52">
-                  The idea of creating a community tab is a more holistically
-                  way to address&nbsp;
-                </span>
-                <span class="home-text53">
-                  motivation, while the course recommendation engine and the
-                  tailored learning are more specific solutions.
-                </span>
-              </p>
-            </div>
-          </div>
-          <div class="home-brands">
-            <div class="home-row">
-              <div class="home-item">
-                <img
-                  alt="image"
-                  src="public/playground_assets/about-our-team-1.svg"
-                  class="home-image05"
-                />
-                <div class="home-details">
-                  <h3 class="home-title02">Community</h3>
-                  <p class="home-description">
-                    <span class="home-text54">
-                      DataCamp currently doesn't have a space where users can
-                      share information about courses they have taken in a
-                      Q&amp;A format.
-                    </span>
-                    <br class="home-text55" />
-                    <span class="home-text56">We think that</span>
-                    <span class="home-text57">
-                      the Workspace window could be leveraged to contain more
-                      than just blog-like posts about Data Science notebooks.
-                    </span>
-                    <span class="home-text58">This is why in the last 24h</span>
-                    <span class="home-text59">
-                      we created UI prototypes that illustrate how DataCamp's
-                      website could be redesigned to host discussions about
-                      course assignments
-                    </span>
-                    <span class="home-text60">
-                      and Q&amp;As about Data Science related topics.
-                    </span>
-                  </p>
-                </div>
-              </div>
-              <div class="home-item1">
-                <img
-                  alt="image"
-                  src="public/playground_assets/why-2.svg"
-                  class="home-image06"
-                />
-                <div class="home-details1">
-                  <h3 class="home-title03">Better course recommendations</h3>
-                  <p class="home-description01">
-                    <span>
-                      When a person starts looking for a course they might have
-                      a final goal in mind but not know exactly what is the best
-                      learning path to follow. For example "How can I train a
-                      model to classify animals?". This is why
-                    </span>
-                    <span class="home-text62">
-                      we prototyped a NLP model that helps find the best
-                      matching courses on datacamp according to the classes
-                      derived from the search query tokens.&nbsp;
-                    </span>
-                  </p>
-                </div>
-              </div>
-              <div class="home-item2">
-                <img
-                  alt="image"
-                  src="public/playground_assets/why-3.svg"
-                  class="home-image07"
-                />
-                <div class="home-details2">
-                  <h3 class="home-title04">Tailored Learning</h3>
-                  <p class="home-description02">
-                    <span>
-                      Eventhough DataCamp has a vast course catalogue, it will
-                      never be large enough to adapt to specific user learning
-                      needs.
-                    </span>
-                    <span class="home-text64">
-                      We think we could tackle this by personalizing courses
-                      based on the datasets users upload to the website.
-                    </span>
-                    <span></span>
-                    <br />
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="home-watch">
-          <div class="home-content03">
-            <h2 class="home-header05">Watch our Demo video</h2>
-            <div class="home-video">
-              <video
-                src=""
-                poster="public/playground_assets/quotes-1-1400w.png"
-                class="home-video1"
-              ></video>
-              <img
-                alt="image"
-                src="public/playground_assets/play.svg"
-                class="home-image08"
-              />
-            </div>
-            <button class="button home-register2">
+    p,
+    li,
+    ul,
+    pre,
+    div,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    figure,
+    blockquote,
+    figcaption {
+      margin: 0;
+      padding: 0;
+    }
+
+    button {
+      background-color: transparent;
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      font-family: inherit;
+      font-size: 100%;
+      line-height: 1.15;
+      margin: 0;
+    }
+
+    button,
+    select {
+      text-transform: none;
+    }
+
+    button,
+    [type="button"],
+    [type="reset"],
+    [type="submit"] {
+      -webkit-appearance: button;
+    }
+
+    button::-moz-focus-inner,
+    [type="button"]::-moz-focus-inner,
+    [type="reset"]::-moz-focus-inner,
+    [type="submit"]::-moz-focus-inner {
+      border-style: none;
+      padding: 0;
+    }
+
+    button:-moz-focus,
+    [type="button"]:-moz-focus,
+    [type="reset"]:-moz-focus,
+    [type="submit"]:-moz-focus {
+      outline: 1px dotted ButtonText;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: inherit;
+    }
+
+    input {
+      padding: 2px 4px;
+    }
+
+    img {
+      display: block;
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+  </style>
+  <style data-tag="default-style-sheet">
+    html {
+      font-family: Source Sans Pro;
+      font-size: 16px;
+    }
+
+    body {
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      text-transform: none;
+      letter-spacing: normal;
+      line-height: 1.15;
+      color: var(--dl-color-gray-black);
+      background-color: var(--dl-color-gray-white);
+
+    }
+  </style>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+
+  <link rel="stylesheet" href="./style.css" />
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal({ reset: true });
+  </script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal({ reset: true });
+  </script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal({ reset: true });
+  </script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal({ reset: true });
+  </script>
+</head>
+
+<body>
+  <div>
+    <script type="text/javascript" src="https://unpkg.com/dangerous-html@0.1.11/dist/default/lib.umd.js"></script>
+    <link href="./home.css" rel="stylesheet" />
+
+    <div class="home-container">
+      <section class="home-hero">
+        <div class="home-background">
+          <img alt="image" src="public/playground_assets/circle-background.svg" class="home-image" />
+          <img alt="image" src="public/playground_assets/line-background.svg" class="home-image01" />
+        </div>
+        <header data-thq="thq-navbar" class="home-navbar">
+          <h2 class="home-text">Haggethonners</h2>
+          <div data-thq="thq-navbar-nav" data-role="Nav" class="home-desktop-menu">
+            <nav data-thq="thq-navbar-nav-links" data-role="Nav" class="home-nav">
+              <span class="navLink"><a href="#challenge">The Problem</a></span>
+              <span class="navLink"><a href="#demo">Demo Video</a></span>
+              <span class="navLink"><a href="#solution">Solutions</a></span>
+              <span class="navLink">Team</span>
+            </nav>
+            <a href="demo.html"><button class="home-register button">
               <span>Try the demo</span>
-              <svg viewBox="0 0 1024 1024" class="home-icon12">
-                <path
-                  d="M512 170l342 342-342 342-60-60 238-240h-520v-84h520l-238-240z"
-                ></path>
+              <svg viewBox="0 0 1024 1024" class="home-icon">
+                <path d="M512 170l342 342-342 342-60-60 238-240h-520v-84h520l-238-240z"></path>
               </svg>
-            </button>
+            </button></a>
           </div>
-          <div class="home-container2"></div>
-        </section>
-        <section class="home-black">
-          <section class="home-join">
-            <div class="home-section-numeral2">
-              <div class="home-divide2"></div>
-              <p class="home-text68">03</p>
+          <div data-thq="thq-burger-menu" class="home-burger-menu">
+            <svg viewBox="0 0 1024 1024" class="home-icon02">
+              <path
+                d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z">
+              </path>
+            </svg>
+          </div>
+          <div data-thq="thq-mobile-menu" class="home-mobile-menu">
+            <div data-thq="thq-mobile-menu-nav" data-role="Nav" class="home-nav1">
+              <div class="home-container1">
+                <h2 class="home-text02">OnConf</h2>
+                <div data-thq="thq-close-menu" class="home-menu-close">
+                  <svg viewBox="0 0 1024 1024" class="home-icon04">
+                    <path
+                      d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z">
+                    </path>
+                  </svg>
+                </div>
+              </div>
+              <nav data-thq="thq-mobile-menu-nav-links" data-role="Nav" class="home-nav2">
+                <span class="navLink home-text03">About</span>
+                <span class="navLink home-text04">Features</span>
+                <span class="navLink home-text05">Pricing</span>
+                <span class="navLink home-text06">Team</span>
+                <span class="navLink home-text07">Blog</span>
+              </nav>
+              <div class="home-button-container">
+                <button class="home-login button">Login</button>
+                <button class="button home-register1">Register</button>
+              </div>
+              <div class="home-icon-group">
+                <div class="home-icons">
+                  <svg viewBox="0 0 950.8571428571428 1024" class="home-icon06">
+                    <path
+                      d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z">
+                    </path>
+                  </svg><svg viewBox="0 0 877.7142857142857 1024" class="home-icon08">
+                    <path
+                      d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z">
+                    </path>
+                  </svg><svg viewBox="0 0 602.2582857142856 1024" class="home-icon10">
+                    <path
+                      d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z">
+                    </path>
+                  </svg>
+                </div>
+              </div>
             </div>
-            <h2 class="home-title05">How can DataCamp get there?</h2>
-          </section>
-          <img
-            alt="image"
-            src="public/playground_assets/black-vector.svg"
-            class="home-image09"
-          />
-          <section class="home-more">
-            <div class="home-header06">
-              <div data-aos="fade-right" class="home-heading2">
-                <h2 class="home-title06">
-                  Changes in the UI that will foster a engaged community of
+            <img alt="image" src="public/playground_assets/quote-background.svg" class="home-background1" />
+          </div>
+        </header>
+        <div class="home-hero-content">
+          <h3 class="home-text08">
+            <span class="home-text09">How can DataCamp</span>
+            <span class="home-text10">engage</span>
+            <span class="home-text11"></span>
+            <span class="home-text12">&amp;</span>
+            <br class="home-text13" />
+            <span class="home-text14">motivate</span>
+            <span class="home-text15"></span>
+            <span class="home-text16">more learners?</span>
+            <br class="home-text17" />
+          </h3>
+          <div class="home-caption">
+            <p class="home-caption1">
+              <span>a solution by the Haggethoners</span>
+              <br />
+              <span>10—11 March 2023 Leuven</span>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="home-problems">
+        <div class="home-header">
+          <div class="home-section-numeral">
+            <div class="home-divide"></div>
+            <p class="home-text21">01</p>
+          </div>
+          <div data-aos="fade-right" class="home-heading">
+            <h3 class="home-title" id="challenge">Challenges</h3>
+            <p class="home-caption2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam.
+            </p>
+          </div>
+        </div>
+        <div class="home-first">
+          <img alt="image" src="public/playground_assets/why-2.svg" class="home-image02 image-notes" />
+          <div data-aos="fade-up-right" class="home-content">
+            <h2 class="home-header01">
+              <span class="home-text22">
+                Some learners find it difficult to find the
+              </span>
+              <span class="home-text23">time</span>
+              <span class="home-text24">to learn</span>
+              <br />
+              <span class="home-text26">What can DataCamp do about it?</span>
+              <br />
+            </h2>
+            <div class="home-list">
+              <div class="home-note">
+                <div class="home-point"></div>
+                <p class="home-text28">
+                  <span>
+                    Most learners claim they don't have time to complete their
+                    courses because oftentimes learning paths fail to fulfill
+                    the user's goals. We think that
+                  </span>
+                  <span class="home-text30">
+                    combining Natural Language Processing with the vast
+                    catalog of courses DataCamp has can create more
+                    efficient learning paths that keep users engaged.
+                  </span>
+                </p>
+              </div>
+              <div class="home-note1">
+                <div class="home-point1"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home-second">
+          <img alt="image" src="public/playground_assets/online-test-2.svg" class="home-image03 image-notes" />
+          <div data-aos="fade-up-left" class="home-content01">
+            <h2 class="home-header02">
+              <span class="home-text31">
+                Others might find the courses too hard, tend to get stuck or
+              </span>
+              <span class="home-text32">progress too slowly</span>
+              <br class="home-text33" />
+              <span class="home-text34">How can DataCamp tackle this?</span>
+              <br />
+            </h2>
+            <div class="home-note2">
+              <div class="home-point2"></div>
+              <p class="home-text36">
+                <span>We are confident that by</span>
+                <span class="home-text38">
+                  creating community spaces where users can ask questions and
+                  share their achievements will boost the motivation of new
                   learners
-                </h2>
+                </span>
+                <span>and smoothen the learning experience.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="home-third">
+          <img alt="image" src="public/playground_assets/work-from-home-1.svg" class="home-image04" />
+          <div data-aos="fade-up-left" class="home-content02">
+            <h2 class="home-header03">
+              <span class="home-text40">
+                Someone else may be required use DataCampas part of
+                their employer’s
+              </span>
+              <span class="home-text41">mandatory training</span>
+              <br />
+              <span class="home-text43">
+                How can DataCamp keep these users engaged?
+              </span>
+              <br />
+            </h2>
+            <div class="home-note3">
+              <div class="home-point3"></div>
+              <p class="home-text45">
+                <span>
+                  We believe that the best way to keep engagement during
+                  training programs is to shorten the gap between the course
+                  content and the day-to-day work of these employees. We think
+                </span>
+                <span class="home-text47">
+                  allowing the learners to practice with their real datasets
+                  or with similar datasets suggested by DataCamp
+                </span>
+                <span>
+                  will make mandatory training more useful and
+                  interesting to follow.
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="home-solutions">
+        <div class="home-header04">
+          <div class="home-section-numeral1">
+            <div class="home-divide1"></div>
+            <p class="home-text49">02</p>
+          </div>
+          <div data-aos="fade-right" class="home-heading1">
+            <h2 class="home-title01" id="solution">Solutions</h2>
+            <p class="home-caption3">
+              <span class="home-text50">
+                We came up with three with ways to encourage learners to start
+                or continue learning when their motivation is low.
+              </span>
+              <br class="home-text51" />
+              <span class="home-text52">
+                The idea of creating a community tab is a more holistically
+                way to address
+              </span>
+              <span class="home-text53">
+                motivation, while the course recommendation engine and the
+                tailored learning are more specific solutions.
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="home-brands">
+          <div class="home-row">
+            <div class="home-item">
+              <img alt="image" src="public/playground_assets/about-our-team-1.svg" class="home-image05" />
+              <div class="home-details">
+                <h3 class="home-title02">Community</h3>
+                <p class="home-description">
+                  <span class="home-text54">
+                    DataCamp currently doesn't have a space where users can
+                    share information about courses they have taken in a
+                    Q&amp;A format.
+                  </span>
+                  <br class="home-text55" />
+                  <span class="home-text56">We think that</span>
+                  <span class="home-text57">
+                    the Workspace window could be leveraged to contain more
+                    than just blog-like posts about Data Science notebooks.
+                  </span>
+                  <span class="home-text58">This is why in the last 24h</span>
+                  <span class="home-text59">
+                    we created UI prototypes that illustrate how DataCamp's
+                    website could be redesigned to host discussions about
+                    course assignments
+                  </span>
+                  <span class="home-text60">
+                    and Q&amp;As about Data Science related topics.
+                  </span>
+                </p>
               </div>
             </div>
-            <section class="home-quotes">
-              <div class="home-row1">
-                <img
-                  alt="image"
-                  src="public/playground_assets/new_search_page-1400w.png"
-                  class="home-image10"
-                />
-                <div class="home-row2">
-                  <div class="home-details3">
-                    <p class="home-quote">
-                      Search results page with the suggested courses and related
-                      community questions.
-                    </p>
-                  </div>
-                </div>
+            <div class="home-item1">
+              <img alt="image" src="public/playground_assets/why-2.svg" class="home-image06" />
+              <div class="home-details1">
+                <h3 class="home-title03">Better course recommendations</h3>
+                <p class="home-description01">
+                  <span>
+                    When a person starts looking for a course they might have
+                    a final goal in mind but not know exactly what is the best
+                    learning path to follow. For example "How can I train a
+                    model to classify animals?". This is why
+                  </span>
+                  <span class="home-text62">
+                    we prototyped a NLP model that helps find the best
+                    matching courses on datacamp according to the classes
+                    derived from the search query tokens.
+                  </span>
+                </p>
               </div>
-              <div class="home-row3">
-                <div class="home-details4">
-                  <p class="home-quote1">
-                    Community page where the questions take the spotlight
-                    instead of workspaces. Users can discuss problems and
-                    suggest solutions and/or related courses.
+            </div>
+            <div class="home-item2">
+              <img alt="image" src="public/playground_assets/why-3.svg" class="home-image07" />
+              <div class="home-details2">
+                <h3 class="home-title04">Tailored Learning</h3>
+                <p class="home-description02">
+                  <span>
+                    Eventhough DataCamp has a vast course catalogue, it will
+                    never be large enough to adapt to specific user learning
+                    needs.
+                  </span>
+                  <span class="home-text64">
+                    We think we could tackle this by personalizing courses
+                    based on the datasets users upload to the website.
+                  </span>
+                  <span></span>
+                  <br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="home-watch">
+        <div class="home-content03">
+          <h2 class="home-header05"><a id="demo">Watch our Demo video</a>
+
+          </h2>
+          <div class="home-video">
+            <video src="" poster="public/playground_assets/quotes-1-1400w.png" class="home-video1"></video>
+            <img alt="image" src="public/playground_assets/play.svg" class="home-image08" />
+          </div>
+          <a href="teleporthq/demo.html">
+            <button class="button home-register2">
+              Try the demo
+              <svg viewBox="0 0 1024 1024" class="home-icon12">
+                <path d="M512 170l342 342-342 342-60-60 238-240h-520v-84h520l-238-240z"></path>
+              </svg>
+            </button></a>
+        </div>
+        <div class="home-container2"></div>
+      </section>
+      <section class="home-black">
+        <section class="home-join">
+          <div class="home-section-numeral2">
+            <div class="home-divide2"></div>
+            <p class="home-text68">03</p>
+          </div>
+          <h2 class="home-title05">How can DataCamp get there?</h2>
+        </section>
+        <img alt="image" src="public/playground_assets/black-vector.svg" class="home-image09" />
+        <section class="home-more">
+          <div class="home-header06">
+            <div data-aos="fade-right" class="home-heading2">
+              <h2 class="home-title06">
+                Changes in the UI that will foster a engaged community of
+                learners
+              </h2>
+            </div>
+          </div>
+          <section class="home-quotes">
+            <div class="home-row1">
+              <img alt="image" src="public/playground_assets/new_search_page-1400w.png" class="home-image10" />
+              <div class="home-row2">
+                <div class="home-details3">
+                  <p class="home-quote">
+                    Search results page with the suggested courses and related
+                    community questions.
                   </p>
                 </div>
-                <img
-                  alt="image"
-                  src="public/playground_assets/new_community_page-400h.png"
-                  class="home-image11"
-                />
               </div>
-            </section>
-            <section class="home-quotes1">
-              <div class="home-row4">
-                <img
-                  alt="image"
-                  src="public/playground_assets/choose_data_page-1400w.png"
-                  class="home-image12"
-                />
-                <div class="home-row5">
-                  <div class="home-details5">
-                    <p class="home-quote2">
-                      Before the first exercise of the course, the user is
-                      prompted to choose the dataset that will be used for the
-                      course exercises. They can choose a default one, a
-                      generated one based on their use case, or directly provide
-                      one.
-                    </p>
-                  </div>
-                </div>
+            </div>
+            <div class="home-row3">
+              <div class="home-details4">
+                <p class="home-quote1">
+                  Community page where the questions take the spotlight
+                  instead of workspaces. Users can discuss problems and
+                  suggest solutions and/or related courses.
+                </p>
               </div>
-              <div class="home-row6">
-                <div class="home-details6">
-                  <p class="home-quote3">
-                    When choosing for generated or their own data, another page
-                    allows them to specify or upload.
-                  </p>
-                </div>
-                <img
-                  alt="image"
-                  src="public/playground_assets/generate_data-700w.png"
-                  class="home-image13"
-                />
-                <img
-                  alt="image"
-                  src="public/playground_assets/upload_data-700w.png"
-                  class="home-image14"
-                />
-              </div>
-            </section>
-            <section class="home-quotes2">
-              <div class="home-row7"></div>
-              <div class="home-row8">
-                <img
-                  alt="image"
-                  src="public/playground_assets/image_captcha-700w.png"
-                  class="home-image15"
-                />
-                <img
-                  alt="image"
-                  src="public/playground_assets/word_captcha-700w.png"
-                  class="home-image16"
-                />
-                <div class="home-details7">
-                  <p class="home-quote4">
-                    To train the NLP model, users are utilized by having them
-                    solve captchas. The first verifies the user, the second
-                    trains the model.
+              <img alt="image" src="public/playground_assets/new_community_page-400h.png" class="home-image11" />
+            </div>
+          </section>
+          <section class="home-quotes1">
+            <div class="home-row4">
+              <img alt="image" src="public/playground_assets/choose_data_page-1400w.png" class="home-image12" />
+              <div class="home-row5">
+                <div class="home-details5">
+                  <p class="home-quote2">
+                    Before the first exercise of the course, the user is
+                    prompted to choose the dataset that will be used for the
+                    course exercises. They can choose a default one, a
+                    generated one based on their use case, or directly provide
+                    one.
                   </p>
                 </div>
               </div>
-            </section>
-            <h2 class="home-title07">Natural Language Processing (NLP)</h2>
-            <div class="home-accordions">
-              <div class="home-accordion">
-                <div class="home-items">
-                  <div
-                    data-role="accordion-container"
-                    class="home-element accordion"
-                  >
-                    <div class="home-content04">
-                      <span class="home-header07">
-                        Using NLP to help you achieve your goals
-                      </span>
-                      <span
-                        data-role="accordion-content"
-                        class="home-description03"
-                      >
-                        One of the main challenges when tackling a new project
-                        is to find the right resources for what the user
-                        specifically needs. Natural Language Processing is used
-                        to create links between user generated prompts and all
-                        the courses, datasets and queries that DataCamp has.
-                      </span>
-                    </div>
-                    <div class="home-icon-container">
-                      <svg
-                        viewBox="0 0 1024 1024"
-                        data-role="accordion-icon-closed"
-                        class="home-icon14"
-                      >
-                        <path
-                          d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                        ></path></svg
-                      ><svg
-                        viewBox="0 0 1024 1024"
-                        data-role="accordion-icon-open"
-                        class="home-icon16"
-                      >
-                        <path
-                          d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                        ></path>
-                      </svg>
-                    </div>
+            </div>
+            <div class="home-row6">
+              <div class="home-details6">
+                <p class="home-quote3">
+                  When choosing for generated or their own data, another page
+                  allows them to specify or upload.
+                </p>
+              </div>
+              <img alt="image" src="public/playground_assets/generate_data-700w.png" class="home-image13" />
+              <img alt="image" src="public/playground_assets/upload_data-700w.png" class="home-image14" />
+            </div>
+          </section>
+          <section class="home-quotes2">
+            <div class="home-row7"></div>
+            <div class="home-row8">
+              <img alt="image" src="public/playground_assets/image_captcha-700w.png" class="home-image15" />
+              <img alt="image" src="public/playground_assets/word_captcha-700w.png" class="home-image16" />
+              <div class="home-details7">
+                <p class="home-quote4">
+                  To train the NLP model, users are utilized by having them
+                  solve captchas. The first verifies the user, the second
+                  trains the model.
+                </p>
+              </div>
+            </div>
+          </section>
+          <h2 class="home-title07">Natural Language Processing (NLP)</h2>
+          <div class="home-accordions">
+            <div class="home-accordion">
+              <div class="home-items">
+                <div data-role="accordion-container" class="home-element accordion">
+                  <div class="home-content04">
+                    <span class="home-header07">
+                      Using NLP to help you achieve your goals
+                    </span>
+                    <span data-role="accordion-content" class="home-description03">
+                      One of the main challenges when tackling a new project
+                      is to find the right resources for what the user
+                      specifically needs. Natural Language Processing is used
+                      to create links between user generated prompts and all
+                      the courses, datasets and queries that DataCamp has.
+                    </span>
                   </div>
-                  <div
-                    data-role="accordion-container"
-                    class="home-element1 accordion"
-                  >
-                    <div class="home-content05">
-                      <span class="home-header08">
-                        From sentence to resources
-                      </span>
-                      <span
-                        data-role="accordion-content"
-                        class="home-description04"
-                      >
-                        State of the art transformers, using a encoder decoder
-                        architecture are created to link the user's queries to
-                        to the website's resources. The user will be able to
-                        type any prompt in the form of a question, request or
-                        any other structure and the most relevant information
-                        will be revealed.
-                      </span>
-                    </div>
-                    <div class="home-icon-container1">
-                      <svg
-                        viewBox="0 0 1024 1024"
-                        data-role="accordion-icon-closed"
-                        class="home-icon18"
-                      >
-                        <path
-                          d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                        ></path></svg
-                      ><svg
-                        viewBox="0 0 1024 1024"
-                        data-role="accordion-icon-open"
-                        class="home-icon20"
-                      >
-                        <path
-                          d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                        ></path>
-                      </svg>
-                    </div>
+                  <div class="home-icon-container">
+                    <svg viewBox="0 0 1024 1024" data-role="accordion-icon-closed" class="home-icon14">
+                      <path
+                        d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z">
+                      </path>
+                    </svg><svg viewBox="0 0 1024 1024" data-role="accordion-icon-open" class="home-icon16">
+                      <path
+                        d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z">
+                      </path>
+                    </svg>
                   </div>
-                  <div
-                    data-role="accordion-container"
-                    class="home-element2 accordion"
-                  >
-                    <div class="home-content06">
-                      <span class="home-header09">
-                        Procedurally generated datasets
-                      </span>
-                      <span
-                        data-role="accordion-content"
-                        class="home-description05"
-                      >
-                        One of the most useful resources when learning about
-                        datasience is appropiate datasets. Once the most
-                        relevant techniques have been extracted from the user's
-                        questions, procedurally generated datasets are
-                        presented, taylor made for the lesson or requests that
-                        was presented to the system.
-                      </span>
-                    </div>
-                    <div class="home-icon-container2">
-                      <svg
-                        viewBox="0 0 1024 1024"
-                        data-role="accordion-icon-closed"
-                        class="home-icon22"
-                      >
-                        <path
-                          d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                        ></path></svg
-                      ><svg
-                        viewBox="0 0 1024 1024"
-                        data-role="accordion-icon-open"
-                        class="home-icon24"
-                      >
-                        <path
-                          d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                        ></path>
-                      </svg>
-                    </div>
+                </div>
+                <div data-role="accordion-container" class="home-element1 accordion">
+                  <div class="home-content05">
+                    <span class="home-header08">
+                      From sentence to resources
+                    </span>
+                    <span data-role="accordion-content" class="home-description04">
+                      State of the art transformers, using a encoder decoder
+                      architecture are created to link the user's queries to
+                      to the website's resources. The user will be able to
+                      type any prompt in the form of a question, request or
+                      any other structure and the most relevant information
+                      will be revealed.
+                    </span>
+                  </div>
+                  <div class="home-icon-container1">
+                    <svg viewBox="0 0 1024 1024" data-role="accordion-icon-closed" class="home-icon18">
+                      <path
+                        d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z">
+                      </path>
+                    </svg><svg viewBox="0 0 1024 1024" data-role="accordion-icon-open" class="home-icon20">
+                      <path
+                        d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <div data-role="accordion-container" class="home-element2 accordion">
+                  <div class="home-content06">
+                    <span class="home-header09">
+                      Procedurally generated datasets
+                    </span>
+                    <span data-role="accordion-content" class="home-description05">
+                      One of the most useful resources when learning about
+                      datasience is appropiate datasets. Once the most
+                      relevant techniques have been extracted from the user's
+                      questions, procedurally generated datasets are
+                      presented, taylor made for the lesson or requests that
+                      was presented to the system.
+                    </span>
+                  </div>
+                  <div class="home-icon-container2">
+                    <svg viewBox="0 0 1024 1024" data-role="accordion-icon-closed" class="home-icon22">
+                      <path
+                        d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z">
+                      </path>
+                    </svg><svg viewBox="0 0 1024 1024" data-role="accordion-icon-open" class="home-icon24">
+                      <path
+                        d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z">
+                      </path>
+                    </svg>
                   </div>
                 </div>
               </div>
-              <div class="home-accordion1">
-                <div class="home-header10">
-                  <div class="home-divide3"></div>
-                  <h3 class="home-title08">How will we get there?</h3>
+            </div>
+            <div class="home-accordion1">
+              <div class="home-header10">
+                <div class="home-divide3"></div>
+                <h3 class="home-title08">How will we get there?</h3>
+              </div>
+              <div class="home-items1">
+                <div data-role="accordion-container" class="home-element3 accordion">
+                  <div class="home-content07">
+                    <span class="home-header11">Acquiring Data</span>
+                    <span data-role="accordion-content" class="home-description06">
+                      The tendency for most state of the art models in NLP is
+                      to use increasingly extensive databases to train. This
+                      will inevitably delay the deployment of the new
+                      features. We can circunvent this by extracting useful
+                      data from the experiences of the users in order to train
+                      classifier and regression models while they are being
+                      used.
+                    </span>
+                  </div>
+                  <div class="home-icon-container3">
+                    <svg viewBox="0 0 1024 1024" data-role="accordion-icon-closed" class="home-icon26">
+                      <path
+                        d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z">
+                      </path>
+                    </svg><svg viewBox="0 0 1024 1024" data-role="accordion-icon-open" class="home-icon28">
+                      <path
+                        d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z">
+                      </path>
+                    </svg>
+                  </div>
                 </div>
-                <div class="home-items1">
-                  <div
-                    data-role="accordion-container"
-                    class="home-element3 accordion"
-                  >
-                    <div class="home-content07">
-                      <span class="home-header11">Acquiring Data</span>
-                      <span
-                        data-role="accordion-content"
-                        class="home-description06"
-                      >
-                        The tendency for most state of the art models in NLP is
-                        to use increasingly extensive databases to train. This
-                        will inevitably delay the deployment of the new
-                        features. We can circunvent this by extracting useful
-                        data from the experiences of the users in order to train
-                        classifier and regression models while they are being
-                        used.
-                      </span>
-                    </div>
-                    <div class="home-icon-container3">
-                      <svg
-                        viewBox="0 0 1024 1024"
-                        data-role="accordion-icon-closed"
-                        class="home-icon26"
-                      >
-                        <path
-                          d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                        ></path></svg
-                      ><svg
-                        viewBox="0 0 1024 1024"
-                        data-role="accordion-icon-open"
-                        class="home-icon28"
-                      >
-                        <path
-                          d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                        ></path>
-                      </svg>
-                    </div>
+                <div data-role="accordion-container" class="home-element4 accordion">
+                  <div class="home-content08">
+                    <span class="home-header12">Goal Mining</span>
+                    <span data-role="accordion-content" class="home-description07">
+                      The main purpose of the models is to predict what
+                      classes and resources are most useful for users using
+                      their questions and requests as input. Labeled examples
+                      of this relation prompt-goal are easily obtained by
+                      asking users to input what their intentions are before a
+                      learning session and recording all the resources they
+                      utilize during the session.
+                    </span>
                   </div>
-                  <div
-                    data-role="accordion-container"
-                    class="home-element4 accordion"
-                  >
-                    <div class="home-content08">
-                      <span class="home-header12">Goal Mining</span>
-                      <span
-                        data-role="accordion-content"
-                        class="home-description07"
-                      >
-                        The main purpose of the models is to predict what
-                        classes and resources are most useful for users using
-                        their questions and requests as input. Labeled examples
-                        of this relation prompt-goal are easily obtained by
-                        asking users to input what their intentions are before a
-                        learning session and recording all the resources they
-                        utilize during the session.
-                      </span>
-                    </div>
-                    <div class="home-icon-container4">
-                      <svg
-                        viewBox="0 0 1024 1024"
-                        data-role="accordion-icon-closed"
-                        class="home-icon30"
-                      >
-                        <path
-                          d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                        ></path></svg
-                      ><svg
-                        viewBox="0 0 1024 1024"
-                        data-role="accordion-icon-open"
-                        class="home-icon32"
-                      >
-                        <path
-                          d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                        ></path>
-                      </svg>
-                    </div>
+                  <div class="home-icon-container4">
+                    <svg viewBox="0 0 1024 1024" data-role="accordion-icon-closed" class="home-icon30">
+                      <path
+                        d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z">
+                      </path>
+                    </svg><svg viewBox="0 0 1024 1024" data-role="accordion-icon-open" class="home-icon32">
+                      <path
+                        d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z">
+                      </path>
+                    </svg>
                   </div>
-                  <div
-                    data-role="accordion-container"
-                    class="home-element5 accordion"
-                  >
-                    <div class="home-content09">
-                      <span class="home-header13">CAPTCHA tokenization</span>
-                      <span
-                        data-role="accordion-content"
-                        class="home-description08"
-                      >
-                        Another NLP challenge is to extract useful tokens from
-                        user's prompts even when those tokens are not literally
-                        mentioned in the sentence. A secondary CAPTCHA will be
-                        presented to users according to their percieved
-                        knowledge to obtain instances of tokenization for user
-                        generated questions.
-                      </span>
-                    </div>
-                    <div class="home-icon-container5">
-                      <svg
-                        viewBox="0 0 1024 1024"
-                        data-role="accordion-icon-closed"
-                        class="home-icon34"
-                      >
-                        <path
-                          d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                        ></path></svg
-                      ><svg
-                        viewBox="0 0 1024 1024"
-                        data-role="accordion-icon-open"
-                        class="home-icon36"
-                      >
-                        <path
-                          d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                        ></path>
-                      </svg>
-                    </div>
+                </div>
+                <div data-role="accordion-container" class="home-element5 accordion">
+                  <div class="home-content09">
+                    <span class="home-header13">CAPTCHA tokenization</span>
+                    <span data-role="accordion-content" class="home-description08">
+                      Another NLP challenge is to extract useful tokens from
+                      user's prompts even when those tokens are not literally
+                      mentioned in the sentence. A secondary CAPTCHA will be
+                      presented to users according to their percieved
+                      knowledge to obtain instances of tokenization for user
+                      generated questions.
+                    </span>
+                  </div>
+                  <div class="home-icon-container5">
+                    <svg viewBox="0 0 1024 1024" data-role="accordion-icon-closed" class="home-icon34">
+                      <path
+                        d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z">
+                      </path>
+                    </svg><svg viewBox="0 0 1024 1024" data-role="accordion-icon-open" class="home-icon36">
+                      <path
+                        d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z">
+                      </path>
+                    </svg>
                   </div>
                 </div>
               </div>
-              <div>
-                <dangerous-html
-                  html="<script>
+            </div>
+            <div>
+              <dangerous-html html="<script>
  /*
   Accordion - Code Embed
   */
@@ -862,72 +763,46 @@
       });
   });
 </script>
-"
-                ></dangerous-html>
-              </div>
+"></dangerous-html>
             </div>
-          </section>
-        </section>
-        <footer class="home-footer">
-          <div class="home-content10">
-            <div class="home-details8">
-              <h2 class="home-title09">About this website</h2>
-              <p class="home-description09">
-                This website was designed with TeleportHQ starting from the
-                OnConf template.&nbsp;
-              </p>
-            </div>
-            <div class="home-socials">
-              <img
-                alt="image"
-                src="public/playground_assets/linkedin.svg"
-                class="social"
-              />
-              <a
-                href="https://example.com"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="home-link4"
-              >
-                <img
-                  alt="image"
-                  src="public/playground_assets/instagram.svg"
-                  class="home-image18 social"
-                />
-              </a>
-              <a
-                href="https://example.com"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="home-link5"
-              >
-                <img
-                  alt="image"
-                  src="public/playground_assets/twitter.svg"
-                  class="home-image19 social"
-                />
-              </a>
-            </div>
-            <span class="home-copyright">
-              <span>
-                All Rights Reserved&nbsp;MIT License — Copyright © 2023 Arthur
-                Tavares
-              </span>
-              <br />
-            </span>
           </div>
-        </footer>
-        <div>
-          <dangerous-html
-            html="<script>
+        </section>
+      </section>
+      <footer class="home-footer">
+        <div class="home-content10">
+          <div class="home-details8">
+            <h2 class="home-title09">About this website</h2>
+            <p class="home-description09">
+              This website was designed with TeleportHQ starting from the
+              OnConf template.
+            </p>
+          </div>
+          <div class="home-socials">
+            <img alt="image" src="public/playground_assets/linkedin.svg" class="social" />
+            <a href="https://example.com" target="_blank" rel="noreferrer noopener" class="home-link4">
+              <img alt="image" src="public/playground_assets/instagram.svg" class="home-image18 social" />
+            </a>
+            <a href="https://example.com" target="_blank" rel="noreferrer noopener" class="home-link5">
+              <img alt="image" src="public/playground_assets/twitter.svg" class="home-image19 social" />
+            </a>
+          </div>
+          <span class="home-copyright">
+            <span>
+              All Rights ReservedMIT License — Copyright © 2023 Arthur
+              Tavares
+            </span>
+            <br />
+          </span>
+        </div>
+      </footer>
+      <div>
+        <dangerous-html html="<script>
     ScrollReveal().reveal('.speaker');
     ScrollReveal().reveal('.image-notes');
-</script>"
-          ></dangerous-html>
-        </div>
-        <div>
-          <dangerous-html
-            html="<style>
+</script>"></dangerous-html>
+      </div>
+      <div>
+        <dangerous-html html="<style>
 #scrollbar::-webkit-scrollbar-track
 {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
@@ -948,14 +823,11 @@
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 	background-color: #555;
 }
-</style>"
-          ></dangerous-html>
-        </div>
+</style>"></dangerous-html>
       </div>
     </div>
-    <script
-      data-section-id="navbar"
-      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
-    ></script>
-  </body>
+  </div>
+  <script data-section-id="navbar" src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
+</body>
+
 </html>

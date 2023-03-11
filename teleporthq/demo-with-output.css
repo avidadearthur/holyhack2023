@@ -251,15 +251,15 @@
   justify-content: center;
 }
 .demo-with-output-image02 {
-  width: var(--dl-size-size-large);
+  width: var(--dl-size-size-xlarge);
   object-fit: cover;
 }
 .demo-with-output-image03 {
-  width: var(--dl-size-size-large);
+  width: var(--dl-size-size-xlarge);
   object-fit: cover;
 }
 .demo-with-output-image04 {
-  width: var(--dl-size-size-large);
+  width: var(--dl-size-size-xlarge);
   object-fit: cover;
 }
 .demo-with-output-solutions {
