@@ -43,6 +43,18 @@
     <script>
       ScrollReveal({ reset: true });
     </script>
+	  <script>
+	    function myFunction() {
+	    var x = document.getElementById("myresult");
+	    if (x.style.display === "none") {
+	      x.style.display = "block";
+	      document.getElementById("search-bar").value = "";
+	    } else {
+	      x.style.display = "none";
+
+	    }
+	  }
+	  </script>
   </head>
   <body>
     <div>
@@ -180,12 +192,14 @@
                 type="text"
                 placeholder="What do you want to learn today?"
                 class="demo-input search input"
+	     	id="search-bar"
               />
-              <button class="demo-register2 button"><span>Search</span></button>
+              <button class="demo-register2 button onclick="myFunction()"><span>Search</span></button>
             </div>
           </div>
         </section>
         <section class="demo-solutions">
+	<div id="myresult" style="display:none">
           <div class="demo-header1">
             <div class="demo-section-numeral">
               <div class="demo-divide"></div>
@@ -210,6 +224,7 @@
               </p>
             </div>
           </div>
+	</div>
           <div class="demo-brands">
             <div class="demo-row">
               <div class="demo-item">
