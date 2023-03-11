@@ -1,11 +1,6 @@
-from flask import Blueprint
-from flask import request
+from flask import Blueprint, request
 
 import pickle
-import pandas as pd
-import os
-
-from flask_jsonpify import jsonpify
 
 nlp_classifier = Blueprint('nlp_classifier',__name__)
 
@@ -34,6 +29,7 @@ def classify(text, displayPrediction = False):
 @nlp_classifier.route('/sentence_classifier/', methods=['GET'])
 def getClustering():
     SENTENCE = request.json["sentence"]
+    # print(request.args.get("arg"))
     prediction, prediction_probabilites, classes = classify(SENTENCE)
 
     response = {"class": f"{SENTENCE} belongs to {prediction[0]} class."}

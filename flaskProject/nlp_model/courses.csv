@@ -1,0 +1,10 @@
+class,course,stars
+Tableau,Tableau Fundamentals,4
+Tableau,Advanced Tableau Techniques,4
+Tableau,Tableau for Business Intelligence,5
+Tableau,Tableau for Data Science,3
+scikit-learn,Machine Learning Fundamentals with Scikit-learn,5
+scikit-learn,Deep Learning with Scikit-learn,3
+scikit-learn,Scikit-learn for Natural Language Processing,4
+scikit-learn,Advanced Scikit-learn Techniques,5
+scikit-learn,Machine Learning with Scikit-learn for Business Applications,5

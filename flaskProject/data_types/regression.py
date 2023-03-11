@@ -1,4 +1,4 @@
-from flask import Blueprint
+from flask import Blueprint, request
 
 regression_api = Blueprint('regression',__name__)
 
@@ -10,14 +10,15 @@ from flask_jsonpify import jsonpify
 @regression_api.route('/regression_generator/', methods=['GET'])
 def regression_generator():
     # Variables
-    n_samples = 100
-    positive = True
+    n_samples = request.args.get("n_samples", 100, type=int)
+    positive = request.args.get("slope", True, type=bool)
     y_var = "wage"
     x_var = "age"
     dummy = "gender"
 
     data = {}
-    cont = np.random.randint(20, 66, n_samples)
+    cont = np.random.randint(20, 66, int(n_samples))
+    
     
     if positive:
         slope = 3
@@ -27,11 +28,11 @@ def regression_generator():
     y_line = cont*slope
 
     if positive:
-        int = 10
+        inter = 10
     else:
-        int = np.abs(np.min(y_line)) + 10
+        inter = np.abs(np.min(y_line)) + 10
 
-    depen = int +  y_line + np.random.normal(0, 20, n_samples)
+    depen = inter +  y_line + np.random.normal(0, 20, n_samples)
     data[y_var]= depen
     data[x_var] = cont
     if dummy:

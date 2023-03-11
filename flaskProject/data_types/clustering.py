@@ -5,7 +5,6 @@ import math
 clustering_api = Blueprint('clustering',__name__)
 
 import pandas as pd
-import numpy as np
 
 from flask_jsonpify import jsonpify
 
