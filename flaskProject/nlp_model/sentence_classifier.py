@@ -9,8 +9,8 @@ from flask_jsonpify import jsonpify
 
 nlp_classifier = Blueprint('nlp_classifier',__name__)
 
-clf_filename = 'flaskProject/nlp_model/classifier.pkl'
-vec_filename = 'flaskProject/nlp_model/count_vectorizer.pkl'
+clf_filename = 'nlp_model/classifier.pkl'
+vec_filename = 'nlp_model/count_vectorizer.pkl'
 
 nb_clf = pickle.load(open(clf_filename, 'rb'))
 vectorizer = pickle.load(open(vec_filename, 'rb'))
