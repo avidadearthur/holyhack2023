@@ -3,6 +3,7 @@ import json
 
 from data_types.regression import regression_api
 from data_types.clustering import clustering_api
+from nlp_model.sentence_classifier import nlp_classifier
 
 app = Flask(__name__)
 
@@ -12,5 +13,6 @@ def welcome_page():
 
 app.register_blueprint(regression_api)
 app.register_blueprint(clustering_api)
+app.register_blueprint(nlp_classifier)
 
 app.run()
